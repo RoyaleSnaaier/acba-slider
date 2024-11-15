@@ -1,0 +1,245 @@
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/plugin/editor.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+:root {
+  --acbaslider-divider-handle-border-color: #888;
+  --acbaslider-divider-handle-box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  --acbaslider-divider-handle-border-radius: 25%;
+  --acbaslider-divider-handle-transition: box-shadow 0.3s ease-in-out;
+  --acbaslider-divider-handle-box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+  --acbaslider-separator-color: #000000;
+  --acbaslider-before-after-tag: #000000;
+  --acbaslider-before-after-font-size: 1.1rem;
+  --acbaslider-divider-box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  --acbaslider-divider-transition: left 0.3s ease-in-out;
+  --acbaslider-container-border-radius: 15px;
+  --acbaslider-container-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  --acbaslider-before-after-floating-tag: #ffffff;
+  --acbaslider-before-after-floating-font-size: 0.9rem;
+  --acbaslider-before-after-floating-font-weight: bold;
+  --acbaslider-before-after-floating-spacing: 8px;
+  --acbaslider-before-after-floating-transition: left 0.3s ease, transform 0.3s ease;
+  --acbaslider-before-after-floating-border-radius: 10px;
+  --acbaslider-before-after-floating-padding: 5px 10px;
+  --acbaslider-before-after-floating-font-size: .7rem;
+  --acbaslider-before-after-floating-color: #000000;
+}
+
+.acbaslider-editor {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Labels Section */
+.acbaslider__labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: var(--acbaslider-before-after-font-size);
+  color: var(--acbaslider-before-after-tag);
+}
+
+.acbaslider__labels__label {
+  font-weight: bold;
+  color: var(--acbaslider-before-after-tag);
+}
+
+.acbaslider__labels__separator {
+  width: 20px;
+  height: 1px;
+  background-color: var(--acbaslider-separator-color);
+  align-self: center;
+}
+
+.acbaslider-no-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  background-color: #f0f0f0; /* Light grey background */
+  border: 2px dashed #cccccc; /* Dashed border */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center text */
+}
+
+/* Image Selection */
+.acbaslider__img-select-container {
+  display: flex;
+  gap: 10px; /* Space between images and buttons */
+  max-width: 100%;
+}
+
+.acbaslider-image-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Adjust width if needed */
+  text-align: center;
+}
+
+.acbaslider-image-selection img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 4px;
+  display: block;
+  margin-top: 10px;
+}
+
+.acbaslider-image-selection button {
+  margin-top: 10px;
+}
+
+.acbaslider-button-wrapper {
+  margin-top: auto; /* Pushes the button to the bottom of the container */
+  display: flex;
+  justify-content: center;
+}
+
+/* Preview Section */
+.acbaslider-preview {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.acbaslider-preview img {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: var(--acbaslider-container-border-radius);
+  box-shadow: var(--acbaslider-container-box-shadow);
+}
+
+/* Divider and Handle */
+.acbaslider__divider {
+  width: 4px;
+  height: 100%;
+}
+
+.acbaslider__divider__handle {
+  width: 25px;
+  height: 25px;
+  border: 3px solid var(--acbaslider-divider-handle-border-color);
+  border-radius: var(--acbaslider-divider-handle-border-radius);
+  box-shadow: var(--acbaslider-divider-handle-box-shadow);
+  transition: var(--acbaslider-divider-handle-transition);
+}
+
+/* Floating Labels */
+.acbaslider__floating-label {
+  font-size: var(--acbaslider-before-after-floating-font-size);
+  font-weight: var(--acbaslider-before-after-floating-font-weight);
+  color: var(--acbaslider-before-after-floating-color);
+  background-color: var(--acbaslider-before-after-floating-tag);
+  padding: var(--acbaslider-before-after-floating-padding);
+  border-radius: var(--acbaslider-before-after-floating-border-radius);
+  transition: var(--acbaslider-before-after-floating-transition);
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .acbaslider-preview {
+    flex-direction: column;
+  }
+  .acbaslider-preview img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .image-selection img {
+    max-width: 80px;
+  }
+}
+.color-palette-wrapper {
+  margin-bottom: 20px;
+}
+
+.color-palette-wrapper .components-color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+
+.color-palette-wrapper .components-color-palette__item {
+  flex: 1 1 30px;
+  height: 30px;
+}
+
+.color-palette-wrapper {
+  margin-bottom: 20px;
+}
+
+.color-palette-wrapper .components-color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+
+.color-palette-wrapper .components-color-palette__item {
+  flex: 1 1 30px;
+  height: 30px;
+}
+
+.acba-color-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  position: relative; /* Ensure the color palette is positioned correctly */
+}
+
+.acba-color-control span {
+  flex: 1;
+}
+
+.acba-color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acba-color-circle:focus {
+  outline: 2px solid #005fcc; /* Add focus outline for accessibility */
+}
+
+.acba-color-control .components-color-palette {
+  position: absolute;
+  z-index: 10;
+  margin-top: 5px;
+  background: #fff; /* Ensure the palette has a background */
+  border: 1px solid #ccc; /* Add border for better visibility */
+  border-radius: 4px; /* Rounded corners for the palette */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 10px; /* Padding for better spacing */
+  display: none; /* Initially hide the palette */
+}
+
+.acba-color-control .components-color-palette.acba-open {
+  display: block; /* Show the palette when open */
+}
+
+.acba-color-control .components-color-palette .close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+/*# sourceMappingURL=index.css.map*/

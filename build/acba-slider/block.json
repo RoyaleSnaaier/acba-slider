@@ -1,0 +1,87 @@
+{
+  "apiVersion": 2,
+  "name": "ac-baslider/before-after-slider",
+  "title": "Before-After Slider",
+  "category": "widgets",
+  "icon": "images-alt2",
+  "description": "A custom before-after image slider block.",
+  "supports": {
+    "html": false,
+    "align": [
+      "full",
+      "wide"
+    ]
+  },
+  "attributes": {
+    "beforeImage": {
+      "type": "string"
+    },
+    "afterImage": {
+      "type": "string"
+    },
+    "startPosition": {
+      "type": "number",
+      "default": 50
+    },
+    "step": {
+      "type": "number",
+      "default": 5
+    },
+    "mouseFollow": {
+      "type": "boolean",
+      "default": false
+    },
+    "clickPosition": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoSlide": {
+      "type": "boolean",
+      "default": false
+    },
+    "slideSpeed": {
+      "type": "number",
+      "default": 3000
+    },
+    "autoSliderSteps": {
+      "type": "number",
+      "default": 5
+    },
+    "floatingLabels": {
+      "type": "boolean",
+      "default": false
+    },
+    "dividerColor": {
+      "type": "string"
+    },
+    "handleColor": {
+      "type": "string"
+    },
+    "animationSpeed": {
+      "type": "number",
+      "default": 70
+    },
+    "beforeAlt": {
+      "type": "string"
+    },
+    "afterAlt": {
+      "type": "string"
+    },
+    "beforeLabelColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "afterLabelColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "handleVisible": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "script": "file:./view.js"
+}

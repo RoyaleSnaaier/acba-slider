@@ -1,0 +1,34 @@
+{
+	"name": "acba-slider",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build && webpack --config ./acba-webpack.config.js --mode=production && sass src/plugin/index.scss assets/index.css",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "concurrently \"wp-scripts start\" \"webpack --config ./acba-webpack.config.js --mode=development\" \"sass --watch src/plugin:assets\"",
+		"wp-scripts": "wp-scripts",
+		"scripts-production": "webpack"
+	},
+	"devDependencies": {
+		"@wordpress/block-editor": "^14.5.0",
+		"@wordpress/scripts": "^30.3.0",
+		"sass": "^1.80.6",
+		"concurrently": "^7.0.0",
+		"ts-loader": "^9.5.1",
+		"typescript": "^5.6.3",
+		"webpack": "^5.95.0",
+		"webpack-cli": "^5.1.4",
+		"node-sass": "^8.0.0"
+	},
+	"dependencies": {
+		"@wordpress/components": "^28.10.0",
+		"@wordpress/data": "^10.10.0"
+	}
+}
